@@ -14,7 +14,7 @@ void folderTransferA(void) {
         while(loop < 75) {
             // Sleep for 0.55 seconds
             std::this_thread::sleep_for(std::chrono::milliseconds(0555));
-            std::cout << "Folder 1 Transfering: " << loop << std::endl;
+            std::cout << "Folder 1 Transferring: " << loop << std::endl;
             loop++;
         }
         if(loop == 75){
@@ -28,7 +28,7 @@ void folderTransferB(void) {
         while(loop < 250) {
           // Sleep for 0.33 seconds
            std::this_thread::sleep_for(std::chrono::milliseconds(0333));
-           std::cout << "Folder 2 Transfering: " << loop << std::endl;
+           std::cout << "Folder 2 Transferring: " << loop << std::endl;
            loop++;
         }
         if(loop == 250){
@@ -42,7 +42,7 @@ void folderTransferC(void) {
         while(loop < 150) {
           // Sleep for 0.44 seconds
            std::this_thread::sleep_for(std::chrono::milliseconds(0444));
-           std::cout << "Folder 3 Transfering: " << loop << std::endl;
+           std::cout << "Folder 3 Transferring: " << loop << std::endl;
            loop++;
         }
         if(loop == 150){
@@ -56,7 +56,7 @@ void folderTransferD(void) {
         while(loop < 700) {
           // Sleep for 0.11 seconds
            std::this_thread::sleep_for(std::chrono::milliseconds(0111));
-           std::cout << "Folder 4 Transfering: " << loop << std::endl;
+           std::cout << "Folder 4 Transferring: " << loop << std::endl;
            loop++;
         }
         if(loop == 700){
@@ -79,7 +79,7 @@ int main() {
    std::thread folder_threadC(folderTransferC); 
    std::thread folder_threadD(folderTransferD);  
   
-   std::cout << "Folders will now start transfering files" << std::endl;
+   std::cout << "Folders will now start transferring files" << std::endl;
    //allowing the threads to run at the same time
    folder_threadA.join();
    folder_threadB.join();
